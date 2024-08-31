@@ -25,7 +25,9 @@ export const SectionInfo = ({
       viewport={{ once: true }}
       className={cn('space-y-8 p-6', className)}
     >
-      <h2 className={`${titleFont.className} text-5xl font-semibold`}>
+      <h2
+        className={`${titleFont.className} text-5xl font-semibold drop-shadow-text`}
+      >
         {title}
       </h2>
       <p className="text-lg text-gray-200">{description}</p>

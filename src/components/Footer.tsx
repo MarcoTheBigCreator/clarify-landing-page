@@ -10,7 +10,7 @@ export const Footer = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-blue-900 py-6 px-4 mt-28"
+      className="bg-blue-900 py-6 px-4 mt-24"
     >
       <div className="container mx-auto text-center">
         <p className="text-blue-300">
