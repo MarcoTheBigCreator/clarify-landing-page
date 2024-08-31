@@ -28,7 +28,7 @@ export const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100 }}
-      className="py-6 px-4 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-20"
+      className="py-6 px-4 md:py-2 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-20"
     >
       <div className="container mx-auto flex justify-between items-center">
         <motion.h1
