@@ -9,6 +9,7 @@ import {
 } from '@radix-ui/react-icons';
 import { navbar } from '@/locales';
 import { titleFont } from '@/config';
+import { Logo } from './ui/Logo';
 
 interface NavbarItem {
   name: string;
@@ -27,16 +28,16 @@ export const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100 }}
-      className="py-6 px-4 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-10"
+      className="py-6 px-4 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-20"
     >
       <div className="container mx-auto flex justify-between items-center">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="text-3xl font-bold flex items-center"
+          className={`${titleFont.className} text-4xl font-bold flex items-center `}
         >
-          <EyeOpenIcon className={`${titleFont.className} mr-2 h-8 w-8`} />{' '}
+          <Logo.Icon className="h-20 w-30 pb-4 mr-2" />
           Clarify
         </motion.h1>
         <nav className="hidden md:block">

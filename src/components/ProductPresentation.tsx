@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ProductPreview } from './ui/ProductPreview';
 import { titleFont } from '@/config';
 import { ProductDescription } from './ui/ProductDescription';
+import { Logo } from './ui/Logo';
 
 export const ProductPresentation = () => {
   return (
@@ -16,10 +17,11 @@ export const ProductPresentation = () => {
       className="space-y-16"
     >
       <h2
-        className={`${titleFont.className} text-5xl font-semibold text-center drop-shadow-text`}
+        className={`${titleFont.className} text-5xl flex align-middle justify-center font-semibold text-center drop-shadow-text`}
       >
         Conoce Clarify
       </h2>
+
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         {/* Product Preview as a Mobile */}
         <motion.div
