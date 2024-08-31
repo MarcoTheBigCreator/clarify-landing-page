@@ -8,17 +8,17 @@ html {
 
 /* Styles for scrollbar */
 ::-webkit-scrollbar {
-  @apply w-2;
+  @apply w-1;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply rounded-md bg-transparent;
+  @apply rounded-md bg-gradient-to-b from-zinc-900 to-zinc-800;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply rounded-md bg-gradient-to-t from-violet-800 to-violet-500;
+  @apply rounded-md bg-gradient-to-t from-blue-800 to-blue-500;
 }
 
 @layer utilities {

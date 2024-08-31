@@ -1,11 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import {
-  GitHubLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon,
-} from '@radix-ui/react-icons';
+import { GitHubLogoIcon } from '@radix-ui/react-icons';
 
 export const Footer = () => {
   return (
@@ -14,7 +10,7 @@ export const Footer = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-blue-900 py-12 px-4 mt-32"
+      className="bg-blue-900 py-6 px-4 mt-28"
     >
       <div className="container mx-auto text-center">
         <p className="text-blue-300">
@@ -24,26 +20,12 @@ export const Footer = () => {
           <motion.a
             whileHover={{ scale: 1.2, rotate: 15 }}
             whileTap={{ scale: 0.8, rotate: -15 }}
-            href="#"
-            className="text-blue-300 hover:text-white transition-colors"
-          >
-            <TwitterLogoIcon className="h-6 w-6" />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.2, rotate: 15 }}
-            whileTap={{ scale: 0.8, rotate: -15 }}
-            href="#"
-            className="text-blue-300 hover:text-white transition-colors"
+            href="https://github.com/karelycode/Clarify"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className="text-blue-300 hover:text-violet-400 transition-colors"
           >
             <GitHubLogoIcon className="h-6 w-6" />
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.2, rotate: 15 }}
-            whileTap={{ scale: 0.8, rotate: -15 }}
-            href="#"
-            className="text-blue-300 hover:text-white transition-colors"
-          >
-            <LinkedInLogoIcon className="h-6 w-6" />
           </motion.a>
         </div>
       </div>

@@ -7,6 +7,13 @@ import {
   EyeOpenIcon,
   HamburgerMenuIcon,
 } from '@radix-ui/react-icons';
+import { navbar } from '@/locales';
+import { titleFont } from '@/config';
+
+interface NavbarItem {
+  name: string;
+  link: string;
+}
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +27,7 @@ export const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100 }}
-      className="py-6 px-4 bg-red-800 bg-opacity-50 backdrop-blur-md fixed w-full z-10"
+      className="py-6 px-4 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-10"
     >
       <div className="container mx-auto flex justify-between items-center">
         <motion.h1
@@ -29,22 +36,23 @@ export const Navbar = () => {
           transition={{ delay: 0.5 }}
           className="text-3xl font-bold flex items-center"
         >
-          <EyeOpenIcon className="mr-2" /> BlindAssist App
+          <EyeOpenIcon className={`${titleFont.className} mr-2 h-8 w-8`} />{' '}
+          Clarify
         </motion.h1>
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
-            {['About', 'Mission', 'Features', 'Demo'].map((item, index) => (
+            {navbar.map((navbarItem: NavbarItem, index) => (
               <motion.li
-                key={item}
+                key={navbarItem.name}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 + index * 0.1 }}
               >
                 <a
-                  href={`#${item.toLowerCase()}`}
-                  className="hover:text-blue-300 transition-colors"
+                  href={navbarItem.link}
+                  className="hover:text-violet-400 transition-colors"
                 >
-                  {item}
+                  {navbarItem.name}
                 </a>
               </motion.li>
             ))}
@@ -71,19 +79,19 @@ export const Navbar = () => {
             className="md:hidden mt-4"
           >
             <ul className="flex flex-col space-y-2">
-              {['About', 'Mission', 'Features', 'Demo'].map((item) => (
+              {navbar.map((navbarItem: NavbarItem) => (
                 <motion.li
-                  key={item}
+                  key={navbarItem.name}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
                   <a
-                    href={`#${item.toLowerCase()}`}
-                    className="block py-2 px-4 hover:bg-blue-700 transition-colors"
+                    href={navbarItem.link}
+                    className="block py-2 px-4 hover:bg-violet-700 transition-colors"
                     onClick={toggleMenu}
                   >
-                    {item}
+                    {navbarItem.name}
                   </a>
                 </motion.li>
               ))}

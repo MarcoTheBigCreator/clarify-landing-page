@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <div className="min-h-screen bg-gradient-to-b from-blue-900 to-blue-700 text-white overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-800 text-white overflow-hidden">
           <Navbar />
           {children}
           <Footer />
