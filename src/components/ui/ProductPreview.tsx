@@ -10,7 +10,7 @@ export const ProductPreview = () => {
           className="h-full w-full"
           controls
           controlsList="nodownload"
-          playsInline
+          poster="https://res.cloudinary.com/dmlpgks2h/image/upload/v1725059400/clarify/cgmo8iboqpb4mckfldg3.jpg"
         >
           <source
             src="https://res.cloudinary.com/dmlpgks2h/video/upload/v1725059424/clarify/fv8ivudtxxg8ufd0r9sb.mp4"

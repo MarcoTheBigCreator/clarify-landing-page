@@ -44,12 +44,12 @@ export const Team = () => {
         ¿Quiénes somos?
       </h2>
       <p className="max-w-3xl mx-auto text-center text-xl text-gray-200">
-        Somos un equipo de cinco jóvenes universitarios apasionados por la
-        tecnología y la accesibilidad. Nuestra misión es crear soluciones
-        innovadoras que transformen la vida de las personas con discapacidad
-        visual. Con habilidades en inteligencia artificial, diseño y desarrollo
-        de software, nos unimos para desarrollar una aplicación que empodera a
-        los usuarios y les ofrece mayor independencia en su día a día.
+        Somos cinco universitarios apasionados por la tecnología y la
+        accesibilidad, dedicados a crear soluciones innovadoras para personas
+        con discapacidad visual. Con experiencia en inteligencia artificial,
+        diseño y desarrollo de software, desarrollamos una aplicación que
+        empodera a los usuarios y les brinda mayor independencia. Nuestra pasión
+        por la tecnología nos motiva a superar retos y a innovar constantemente.
       </p>
       <div className="flex items-center justify-center space-x-4">
         {/* Back Button */}
@@ -81,7 +81,7 @@ export const Team = () => {
                     scale: offset === 0 ? 1 : 0.8,
                   }}
                   exit={{ opacity: 0, scale: 0.8 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.0 }}
                   className={`${offset === 0 ? 'z-10' : 'z-0'}`}
                 >
                   <Card
@@ -94,7 +94,7 @@ export const Team = () => {
                         width={300}
                         height={300}
                         src={member.image}
-                        alt={member.name}
+                        alt={`${member.name} profile picture`}
                         className="w-48 h-48 rounded-full mx-auto mb-10 border-4 border-violet-400 object-cover"
                       />
                       <h3 className="font-semibold text-xl">{member.name}</h3>

@@ -2,11 +2,7 @@
 
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import {
-  Cross1Icon,
-  EyeOpenIcon,
-  HamburgerMenuIcon,
-} from '@radix-ui/react-icons';
+import { Cross1Icon, HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { navbar } from '@/locales';
 import { titleFont } from '@/config';
 import { Logo } from './ui/Logo';
@@ -28,7 +24,7 @@ export const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100 }}
-      className="py-6 px-4 md:py-2 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-20"
+      className="px-4 py-2 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-20"
     >
       <div className="container mx-auto flex justify-between items-center">
         <motion.h1
