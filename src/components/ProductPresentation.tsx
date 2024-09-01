@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { ProductPreview } from './ui/ProductPreview';
 import { titleFont } from '@/config';
 import { ProductDescription } from './ui/ProductDescription';
-import { Logo } from './ui/Logo';
 
 export const ProductPresentation = () => {
   return (

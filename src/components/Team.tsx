@@ -101,30 +101,36 @@ export const Team = () => {
                       <p className="text-violet-400">{member.role}</p>
                       {offset === 0 && (
                         <div className="flex justify-center space-x-4 mt-6">
-                          <Link
-                            href={member.github}
-                            target="_blank"
-                            referrerPolicy="no-referrer"
-                            className="hover:text-violet-500 transition-colors"
-                          >
-                            <GitHubLogoIcon className="h-6 w-6" />
-                          </Link>
-                          <Link
-                            href={member.linkedin}
-                            target="_blank"
-                            referrerPolicy="no-referrer"
-                            className="hover:text-violet-500 transition-colors"
-                          >
-                            <LinkedInLogoIcon className="h-6 w-6" />
-                          </Link>
-                          <Link
-                            href={member.instagram}
-                            target="_blank"
-                            referrerPolicy="no-referrer"
-                            className="hover:text-violet-500 transition-colors"
-                          >
-                            <InstagramLogoIcon className="h-6 w-6" />
-                          </Link>
+                          {member.github && (
+                            <Link
+                              href={member.github}
+                              target="_blank"
+                              referrerPolicy="no-referrer"
+                              className="hover:text-violet-500 transition-colors"
+                            >
+                              <GitHubLogoIcon className="h-6 w-6" />
+                            </Link>
+                          )}
+                          {member.linkedin && (
+                            <Link
+                              href={member.linkedin}
+                              target="_blank"
+                              referrerPolicy="no-referrer"
+                              className="hover:text-violet-500 transition-colors"
+                            >
+                              <LinkedInLogoIcon className="h-6 w-6" />
+                            </Link>
+                          )}
+                          {member.instagram && (
+                            <Link
+                              href={member.instagram}
+                              target="_blank"
+                              referrerPolicy="no-referrer"
+                              className="hover:text-violet-500 transition-colors"
+                            >
+                              <InstagramLogoIcon className="h-6 w-6" />
+                            </Link>
+                          )}
                         </div>
                       )}
                     </CardContent>
