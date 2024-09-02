@@ -21,7 +21,7 @@ export const Offer = () => {
       >
         ¿Qué Ofrecemos?
       </h2>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8" role="list">
         <SectionWithImage
           sections={offers}
           className="bg-violet-800 bg-opacity-50 backdrop-blur-md border-violet-600"
