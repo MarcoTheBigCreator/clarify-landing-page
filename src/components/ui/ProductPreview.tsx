@@ -24,7 +24,7 @@ export const ProductPreview = () => {
       <div className="rounded-[2rem] overflow-hidden w-[272px] h-[593px] bg-white dark:bg-zinc-800">
         <div className="relative w-[272px] h-[605px] overflow-hidden">
           <video
-            className="h-full w-full object-cover"
+            className="h-full w-full"
             controls
             controlsList="nodownload"
             playsInline
@@ -34,6 +34,18 @@ export const ProductPreview = () => {
             <source
               src="https://res.cloudinary.com/dmlpgks2h/video/upload/v1725233438/clarify/z1pnzxue9yeihhnbd6wn.mov"
               type="video/mp4"
+            />
+            <track
+              src="/subtitles/subtitles-es.vtt"
+              kind="captions"
+              srcLang="es"
+              label="Español"
+            />
+            <track
+              src="/subtitles/subtitles-en.vtt"
+              kind="captions"
+              srcLang="en"
+              label="English"
             />
             Tu navegador no soporta la etiqueta de video.
           </video>
