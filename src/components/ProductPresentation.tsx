@@ -18,7 +18,7 @@ export const ProductPresentation = () => {
     >
       <h2
         id="product-heading"
-        className={`${titleFont.className} text-5xl flex align-middle justify-center font-semibold text-center drop-shadow-text`}
+        className={`${titleFont.className} text-blue-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl flex align-middle justify-center font-semibold text-center`}
       >
         Conoce Clarify
       </h2>

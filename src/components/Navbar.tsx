@@ -2,10 +2,16 @@
 
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Cross1Icon, HamburgerMenuIcon } from '@radix-ui/react-icons';
+import {
+  Cross1Icon,
+  DividerVerticalIcon,
+  HamburgerMenuIcon,
+} from '@radix-ui/react-icons';
 import { navbar } from '@/locales';
 import { titleFont } from '@/config';
 import { Logo } from './ui/Logo';
+import { ThemeSwitch } from './ui/ThemeSwitch';
+import { LanguageButton } from './ui/LanguageButton';
 
 interface NavbarItem {
   name: string;
@@ -24,7 +30,7 @@ export const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100 }}
-      className="px-4 py-2 bg-blue-800 bg-opacity-50 backdrop-blur-md fixed w-full z-20"
+      className="px-4 py-2 bg-blue-800 bg-opacity-95 text-white dark:bg-opacity-50 backdrop-blur-md fixed w-full z-20"
       role="banner"
     >
       <div className="container mx-auto flex justify-between items-center">
@@ -38,7 +44,6 @@ export const Navbar = () => {
           Clarify
         </motion.h1>
         <nav className="hidden md:block" aria-label="Main navigation">
-          {/* Etiqueta aria para navegación principal */}
           <ul className="flex space-x-4">
             {navbar.map((navbarItem: NavbarItem, index) => (
               <motion.li
@@ -51,11 +56,24 @@ export const Navbar = () => {
                 <a
                   href={navbarItem.link}
                   className="hover:text-violet-400 transition-colors focus:outline-none focus-visible:ring focus-visible:ring-violet-500"
+                  rel="noreferrer"
                 >
                   {navbarItem.name}
                 </a>
               </motion.li>
             ))}
+
+            {/* Theme and Language Buttons */}
+            <DividerVerticalIcon
+              className="h-6 w-6 text-white"
+              aria-hidden="true"
+            />
+            <ThemeSwitch aria-label="Cambiar tema" />
+            <LanguageButton
+              text="EN"
+              href="/en"
+              aria-label="Cambiar idioma a inglés"
+            />
           </ul>
         </nav>
         <motion.button
@@ -84,8 +102,6 @@ export const Navbar = () => {
             aria-label="Mobile menu"
           >
             <ul className="flex flex-col space-y-2" role="list">
-              {' '}
-              {/* Rol de lista para semántica correcta */}
               {navbar.map((navbarItem: NavbarItem) => (
                 <motion.li
                   key={navbarItem.name}
@@ -98,11 +114,23 @@ export const Navbar = () => {
                     href={navbarItem.link}
                     className="block py-2 px-4 hover:bg-violet-700 transition-colors focus:outline-none focus-visible:ring focus-visible:ring-violet-500"
                     onClick={toggleMenu}
+                    rel="noreferrer"
                   >
                     {navbarItem.name}
                   </a>
                 </motion.li>
               ))}
+
+              {/* Theme and Language Buttons */}
+              <hr />
+              <div className="ml-3 py-4 flex space-x-5">
+                <ThemeSwitch aria-label="Cambiar tema" />
+                <LanguageButton
+                  text="EN"
+                  href="/en"
+                  aria-label="Cambiar idioma a inglés"
+                />
+              </div>
             </ul>
           </motion.nav>
         )}
