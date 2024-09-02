@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Footer, Navbar } from '@/components';
 import { poppins } from '@/config';
+import { Providers } from '@/providers';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,12 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={poppins.className}>
         <div className="min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-800 text-white overflow-hidden">
-          <Navbar />
-          {children}
-          <Footer />
+          <Providers>
+            <Navbar />
+            {children}
+            <Footer />
+          </Providers>
         </div>
       </body>
     </html>

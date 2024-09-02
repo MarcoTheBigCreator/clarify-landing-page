@@ -50,7 +50,7 @@ export const ProductPreview = () => {
             Tu navegador no soporta la etiqueta de video.
           </video>
         </div>
-        <div className="absolute -bottom-2 left-[7.7rem] w-6 h-6 bg-gray-600 rounded-full"></div>
+        <div className="absolute -bottom-[0.55rem] left-[7.7rem] w-6 h-6 bg-gray-600 rounded-full"></div>
         <div className="absolute -top-2 left-[5.3rem] w-28 h-1 bg-gray-600 rounded"></div>
       </div>
     </div>
