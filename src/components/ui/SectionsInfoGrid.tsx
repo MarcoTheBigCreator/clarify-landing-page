@@ -9,7 +9,7 @@ export const SectionsInfoGrid = () => {
           key={index}
           title={section.title}
           description={section.description}
-          className={section.className}
+          differentBackground={section.differentBackground}
           aria-setsize={SectionsInfo.length}
           aria-posinset={index + 1}
         />

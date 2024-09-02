@@ -1,6 +1,6 @@
 export const ProductPreview = () => {
   return (
-    <div className="relative mx-auto border-zinc-800 dark:border-zinc-800 bg-zinc-800 border-[14px] rounded-[2.5rem] h-[640px] w-[300px] shadow-xl drop-shadow-purple">
+    <div className="relative mx-auto border-zinc-800 dark:border-zinc-800 bg-zinc-800 border-[14px] rounded-[2.5rem] h-[640px] w-[300px] shadow-xl drop-shadow-blue dark:drop-shadow-purple">
       <div
         className="h-[32px] w-[3px] bg-zinc-800 dark:bg-zinc-800 absolute -left-[17px] top-[72px] rounded-l-lg"
         role="presentation"
@@ -21,7 +21,7 @@ export const ProductPreview = () => {
         role="presentation"
         aria-hidden="true"
       ></div>
-      <div className="rounded-[2rem] overflow-hidden w-[272px] h-[593px] bg-white dark:bg-zinc-800">
+      <div className="rounded-[2rem] overflow-hidden w-[272px] h-[593px] bg-zinc-800">
         <div className="relative w-[272px] h-[605px] overflow-hidden">
           <video
             className="h-full w-full"

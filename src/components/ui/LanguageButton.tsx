@@ -18,8 +18,10 @@ export const LanguageButton = ({ icon, text, href }: LanguageButtonProps) => {
   return (
     <button
       type="button"
+      // temporary disabled
+      disabled
       onClick={() => onHandleLocale(href)}
-      className="focus:outline-none focus:ring-2 focus:ring-violet-500 rounded-full text-lg h-6 w-6 flex items-center justify-center"
+      className="focus:outline-none focus:ring-2 focus:ring-violet-500 rounded-full text-lg h-6 w-6 flex items-center justify-center disabled:cursor-not-allowed"
     >
       {icon && <span className="mr-1">{icon}</span>}
       {text}

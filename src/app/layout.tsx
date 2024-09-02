@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={poppins.className}>
-        <div className="min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-800 text-white overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-b from-white to-gray-200 dark:from-zinc-900 dark:to-zinc-800 overflow-hiddenn ease-in-out duration-200 transition-all">
           <Providers>
             <Navbar />
             {children}

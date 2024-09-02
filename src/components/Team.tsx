@@ -39,11 +39,11 @@ export const Team = () => {
       className="space-y-16 mt-6 md:mt-24"
     >
       <h2
-        className={`${titleFont.className} drop-shadow-text text-5xl md:text-6xl font-semibold text-center`}
+        className={`${titleFont.className} text-blue-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl md:text-6xl font-semibold text-center`}
       >
         ¿Quiénes somos?
       </h2>
-      <p className="max-w-3xl mx-auto text-center text-xl text-gray-200">
+      <p className="max-w-3xl mx-auto text-center text-xl text-zinc-700 dark:text-gray-200">
         Somos cinco universitarios apasionados por la tecnología y la
         accesibilidad, dedicados a crear soluciones innovadoras para personas
         con discapacidad visual. Con experiencia en inteligencia artificial,
@@ -59,9 +59,9 @@ export const Team = () => {
             size="icon"
             onClick={prevMember}
             aria-label="Mostrar miembro anterior"
-            className="bg-blue-800 bg-opacity-50 hover:bg-violet-700"
+            className="bg-blue-800 bg-opacity-95 dark:bg-opacity-50 hover:bg-violet-700"
           >
-            <ChevronLeftIcon className="h-8 w-8" />
+            <ChevronLeftIcon className="h-8 w-8 text-white" />
           </Button>
         </motion.div>
 
@@ -87,8 +87,10 @@ export const Team = () => {
                   aria-hidden={offset !== 0}
                 >
                   <Card
-                    className={`w-64 bg-blue-800 bg-opacity-50 backdrop-blur-md border-blue-600 ${
-                      offset !== 0 ? 'hidden md:block' : 'drop-shadow-purple'
+                    className={`w-64 bg-blue-800 bg-opacity-95 dark:bg-opacity-50 backdrop-blur-md border-blue-400 dark:border-blue-600 ${
+                      offset !== 0
+                        ? 'hidden md:block'
+                        : 'drop-shadow-blue dark:drop-shadow-purple'
                     }`}
                   >
                     <CardContent className="p-6 text-center">
@@ -97,12 +99,16 @@ export const Team = () => {
                         height={300}
                         src={member.image}
                         alt={`${member.name} profile picture`}
-                        className="w-48 h-48 rounded-full mx-auto mb-10 border-4 border-violet-400 object-cover"
+                        className="w-48 h-48 rounded-full mx-auto mb-10 border-4 border-blue-500 dark:border-violet-400 object-cover"
                         placeholder="blur"
                         blurDataURL={member.image}
                       />
-                      <h3 className="font-semibold text-xl">{member.name}</h3>
-                      <p className="text-violet-400">{member.role}</p>
+                      <h3 className="font-semibold text-xl text-white">
+                        {member.name}
+                      </h3>
+                      <p className="text-blue-300 dark:text-violet-400">
+                        {member.role}
+                      </p>
                       {offset === 0 && (
                         <div className="flex justify-center space-x-4 mt-6">
                           {member.github && (
@@ -110,7 +116,7 @@ export const Team = () => {
                               href={member.github}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="hover:text-violet-500 transition-colors"
+                              className="hover:text-violet-400 dark:hover:text-violet-500 transition-colors text-white"
                               aria-label={`Perfil de GitHub de ${member.name}`}
                             >
                               <GitHubLogoIcon className="h-6 w-6" />
@@ -121,7 +127,7 @@ export const Team = () => {
                               href={member.linkedin}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="hover:text-violet-500 transition-colors"
+                              className="hover:text-violet-400 dark:hover:text-violet-500 transition-colors text-white"
                               aria-label={`Perfil de LinkedIn de ${member.name}`}
                             >
                               <LinkedInLogoIcon className="h-6 w-6" />
@@ -132,7 +138,7 @@ export const Team = () => {
                               href={member.instagram}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="hover:text-violet-500 transition-colors"
+                              className="hover:text-violet-400 dark:hover:text-violet-500 transition-colors text-white"
                               aria-label={`Perfil de Instagram de ${member.name}`}
                             >
                               <InstagramLogoIcon className="h-6 w-6" />
@@ -155,9 +161,9 @@ export const Team = () => {
             size="icon"
             onClick={nextMember}
             aria-label="Mostrar siguiente miembro"
-            className="bg-blue-800 bg-opacity-50 hover:bg-violet-700"
+            className="bg-blue-800 bg-opacity-95 dark:bg-opacity-50 hover:bg-violet-700"
           >
-            <ChevronRightIcon className="h-8 w-8" />
+            <ChevronRightIcon className="h-8 w-8 text-white" />
           </Button>
         </motion.div>
       </div>

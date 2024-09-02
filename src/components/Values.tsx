@@ -18,7 +18,7 @@ export const Values = () => {
     >
       <h2
         id="values-title"
-        className={`${titleFont.className} text-5xl font-semibold text-center drop-shadow-text`}
+        className={`${titleFont.className} text-blue-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl font-semibold text-center`}
       >
         Valores
       </h2>

@@ -33,25 +33,25 @@ export const SectionWithImage = ({
         >
           <Card
             className={cn(
-              'bg-blue-800 bg-opacity-50 backdrop-blur-md border-blue-600',
+              'bg-blue-800 bg-opacity-95 dark:bg-opacity-50 backdrop-blur-md border-blue-400 dark:border-blue-600',
               className
             )}
           >
             <CardContent className="p-6 text-center flex flex-col items-center">
               <div
-                className="flex items-center justify-center mb-2"
+                className="text-white flex items-center justify-center mb-2"
                 aria-hidden="true"
               >
                 {section.icon}
               </div>
               <h3
                 id={`section-title-${index}`}
-                className="font-semibold text-xl mb-2"
+                className="text-white dark:text-violet-400 font-semibold text-xl mb-2"
                 aria-live="polite"
               >
                 {section.title}
               </h3>
-              <p className="text-gray-200">{section.description}</p>
+              <p className="text-zinc-200">{section.description}</p>
             </CardContent>
           </Card>
         </motion.div>
