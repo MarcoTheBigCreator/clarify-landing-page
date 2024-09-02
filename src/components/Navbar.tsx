@@ -74,7 +74,7 @@ export const Navbar = () => {
               transition={{ delay: 0.5 + navbar.length * 0.1 }}
               role="listitem"
             >
-              <ThemeSwitch aria-label="Cambiar tema" />
+              <ThemeSwitch />
             </motion.li>
 
             <motion.li
@@ -83,11 +83,7 @@ export const Navbar = () => {
               transition={{ delay: 0.5 + navbar.length * 0.1 }}
               role="listitem"
             >
-              <LanguageButton
-                text="EN"
-                href="/en"
-                aria-label="Cambiar idioma a inglés"
-              />
+              <LanguageButton text="EN" href="/en" />
             </motion.li>
           </ul>
         </nav>
@@ -147,7 +143,7 @@ export const Navbar = () => {
                   className="group"
                   onClick={toggleMenu}
                 >
-                  <ThemeSwitch aria-label="Cambiar tema" />
+                  <ThemeSwitch />
                 </motion.li>
 
                 <motion.li
@@ -158,11 +154,7 @@ export const Navbar = () => {
                   className="group"
                   onClick={toggleMenu}
                 >
-                  <LanguageButton
-                    text="EN"
-                    href="/en"
-                    aria-label="Cambiar idioma a inglés"
-                  />
+                  <LanguageButton text="EN" href="/en" />
                 </motion.li>
               </div>
             </ul>
