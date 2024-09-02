@@ -63,17 +63,32 @@ export const Navbar = () => {
               </motion.li>
             ))}
 
-            {/* Theme and Language Buttons */}
+            {/* Theme and Dark mode */}
             <DividerVerticalIcon
               className="h-6 w-6 text-white"
               aria-hidden="true"
             />
-            <ThemeSwitch aria-label="Cambiar tema" />
-            <LanguageButton
-              text="EN"
-              href="/en"
-              aria-label="Cambiar idioma a inglés"
-            />
+            <motion.li
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 + navbar.length * 0.1 }}
+              role="listitem"
+            >
+              <ThemeSwitch aria-label="Cambiar tema" />
+            </motion.li>
+
+            <motion.li
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 + navbar.length * 0.1 }}
+              role="listitem"
+            >
+              <LanguageButton
+                text="EN"
+                href="/en"
+                aria-label="Cambiar idioma a inglés"
+              />
+            </motion.li>
           </ul>
         </nav>
         <motion.button
@@ -121,15 +136,34 @@ export const Navbar = () => {
                 </motion.li>
               ))}
 
-              {/* Theme and Language Buttons */}
+              {/* Theme and Dark mode */}
               <hr />
               <div className="ml-3 py-4 flex space-x-5">
-                <ThemeSwitch aria-label="Cambiar tema" />
-                <LanguageButton
-                  text="EN"
-                  href="/en"
-                  aria-label="Cambiar idioma a inglés"
-                />
+                <motion.li
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  role="listitem"
+                  className="group"
+                  onClick={toggleMenu}
+                >
+                  <ThemeSwitch aria-label="Cambiar tema" />
+                </motion.li>
+
+                <motion.li
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  role="listitem"
+                  className="group"
+                  onClick={toggleMenu}
+                >
+                  <LanguageButton
+                    text="EN"
+                    href="/en"
+                    aria-label="Cambiar idioma a inglés"
+                  />
+                </motion.li>
               </div>
             </ul>
           </motion.nav>
