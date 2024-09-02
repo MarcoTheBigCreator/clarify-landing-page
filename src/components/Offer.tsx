@@ -13,8 +13,10 @@ export const Offer = () => {
       viewport={{ once: true }}
       id="offer"
       className="space-y-16"
+      aria-labelledby="offer-heading"
     >
       <h2
+        id="offer-heading"
         className={`${titleFont.className} text-5xl font-semibold text-center drop-shadow-text`}
       >
         ¿Qué Ofrecemos?

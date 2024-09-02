@@ -12,7 +12,11 @@ export const MissionVision = () => {
       viewport={{ once: true }}
       id="mission"
       className="space-y-16"
+      aria-labelledby="mission-vision-title"
     >
+      <h2 id="mission-vision-title" className="sr-only">
+        Misión y Visión
+      </h2>
       <SectionsInfoGrid />
     </motion.section>
   );

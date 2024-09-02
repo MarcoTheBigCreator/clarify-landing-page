@@ -12,7 +12,6 @@ interface SectionInfoProps {
 }
 
 export const SectionInfo = ({
-  key,
   title,
   description,
   className,
@@ -24,12 +23,14 @@ export const SectionInfo = ({
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className={cn('space-y-8 p-6', className)}
+      role="listitem"
     >
-      <h2
+      <h3
         className={`${titleFont.className} text-5xl font-semibold drop-shadow-text`}
+        aria-live="polite"
       >
         {title}
-      </h2>
+      </h3>
       <p className="text-lg text-gray-200">{description}</p>
     </motion.div>
   );

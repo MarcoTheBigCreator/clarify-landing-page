@@ -44,12 +44,12 @@ export const Team = () => {
         ¿Quiénes somos?
       </h2>
       <p className="max-w-3xl mx-auto text-center text-xl text-gray-200">
-        Somos un equipo de cinco jóvenes universitarios apasionados por la
-        tecnología y la accesibilidad. Nuestra misión es crear soluciones
-        innovadoras que transformen la vida de las personas con discapacidad
-        visual. Con habilidades en inteligencia artificial, diseño y desarrollo
-        de software, nos unimos para desarrollar una aplicación que empodera a
-        los usuarios y les ofrece mayor independencia en su día a día.
+        Somos cinco universitarios apasionados por la tecnología y la
+        accesibilidad, dedicados a crear soluciones innovadoras para personas
+        con discapacidad visual. Con experiencia en inteligencia artificial,
+        diseño y desarrollo de software, desarrollamos una aplicación que
+        empodera a los usuarios y les brinda mayor independencia. Nuestra pasión
+        por la tecnología nos motiva a superar retos y a innovar constantemente.
       </p>
       <div className="flex items-center justify-center space-x-4">
         {/* Back Button */}
@@ -58,6 +58,7 @@ export const Team = () => {
             variant="outline"
             size="icon"
             onClick={prevMember}
+            aria-label="Mostrar miembro anterior"
             className="bg-blue-800 bg-opacity-50 hover:bg-violet-700"
           >
             <ChevronLeftIcon className="h-8 w-8" />
@@ -81,8 +82,9 @@ export const Team = () => {
                     scale: offset === 0 ? 1 : 0.8,
                   }}
                   exit={{ opacity: 0, scale: 0.8 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.0 }}
                   className={`${offset === 0 ? 'z-10' : 'z-0'}`}
+                  aria-hidden={offset !== 0}
                 >
                   <Card
                     className={`w-64 bg-blue-800 bg-opacity-50 backdrop-blur-md border-blue-600 ${
@@ -94,37 +96,46 @@ export const Team = () => {
                         width={300}
                         height={300}
                         src={member.image}
-                        alt={member.name}
+                        alt={`${member.name} profile picture`}
                         className="w-48 h-48 rounded-full mx-auto mb-10 border-4 border-violet-400 object-cover"
                       />
                       <h3 className="font-semibold text-xl">{member.name}</h3>
                       <p className="text-violet-400">{member.role}</p>
                       {offset === 0 && (
                         <div className="flex justify-center space-x-4 mt-6">
-                          <Link
-                            href={member.github}
-                            target="_blank"
-                            referrerPolicy="no-referrer"
-                            className="hover:text-violet-500 transition-colors"
-                          >
-                            <GitHubLogoIcon className="h-6 w-6" />
-                          </Link>
-                          <Link
-                            href={member.linkedin}
-                            target="_blank"
-                            referrerPolicy="no-referrer"
-                            className="hover:text-violet-500 transition-colors"
-                          >
-                            <LinkedInLogoIcon className="h-6 w-6" />
-                          </Link>
-                          <Link
-                            href={member.instagram}
-                            target="_blank"
-                            referrerPolicy="no-referrer"
-                            className="hover:text-violet-500 transition-colors"
-                          >
-                            <InstagramLogoIcon className="h-6 w-6" />
-                          </Link>
+                          {member.github && (
+                            <Link
+                              href={member.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-violet-500 transition-colors"
+                              aria-label={`Perfil de GitHub de ${member.name}`}
+                            >
+                              <GitHubLogoIcon className="h-6 w-6" />
+                            </Link>
+                          )}
+                          {member.linkedin && (
+                            <Link
+                              href={member.linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-violet-500 transition-colors"
+                              aria-label={`Perfil de LinkedIn de ${member.name}`}
+                            >
+                              <LinkedInLogoIcon className="h-6 w-6" />
+                            </Link>
+                          )}
+                          {member.instagram && (
+                            <Link
+                              href={member.instagram}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:text-violet-500 transition-colors"
+                              aria-label={`Perfil de Instagram de ${member.name}`}
+                            >
+                              <InstagramLogoIcon className="h-6 w-6" />
+                            </Link>
+                          )}
                         </div>
                       )}
                     </CardContent>
@@ -141,6 +152,7 @@ export const Team = () => {
             variant="outline"
             size="icon"
             onClick={nextMember}
+            aria-label="Mostrar siguiente miembro"
             className="bg-blue-800 bg-opacity-50 hover:bg-violet-700"
           >
             <ChevronRightIcon className="h-8 w-8" />
