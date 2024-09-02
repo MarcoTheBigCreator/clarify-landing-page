@@ -14,13 +14,15 @@ export const Values = () => {
       viewport={{ once: true }}
       id="values"
       className="space-y-16"
+      aria-labelledby="values-title"
     >
       <h2
+        id="values-title"
         className={`${titleFont.className} text-5xl font-semibold text-center drop-shadow-text`}
       >
         Valores
       </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8" role="list">
         <SectionWithImage sections={values} />
       </div>
     </motion.section>

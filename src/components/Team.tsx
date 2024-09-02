@@ -58,6 +58,7 @@ export const Team = () => {
             variant="outline"
             size="icon"
             onClick={prevMember}
+            aria-label="Mostrar miembro anterior"
             className="bg-blue-800 bg-opacity-50 hover:bg-violet-700"
           >
             <ChevronLeftIcon className="h-8 w-8" />
@@ -83,6 +84,7 @@ export const Team = () => {
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.0 }}
                   className={`${offset === 0 ? 'z-10' : 'z-0'}`}
+                  aria-hidden={offset !== 0}
                 >
                   <Card
                     className={`w-64 bg-blue-800 bg-opacity-50 backdrop-blur-md border-blue-600 ${
@@ -105,8 +107,9 @@ export const Team = () => {
                             <Link
                               href={member.github}
                               target="_blank"
-                              referrerPolicy="no-referrer"
+                              rel="noopener noreferrer"
                               className="hover:text-violet-500 transition-colors"
+                              aria-label={`Perfil de GitHub de ${member.name}`}
                             >
                               <GitHubLogoIcon className="h-6 w-6" />
                             </Link>
@@ -115,8 +118,9 @@ export const Team = () => {
                             <Link
                               href={member.linkedin}
                               target="_blank"
-                              referrerPolicy="no-referrer"
+                              rel="noopener noreferrer"
                               className="hover:text-violet-500 transition-colors"
+                              aria-label={`Perfil de LinkedIn de ${member.name}`}
                             >
                               <LinkedInLogoIcon className="h-6 w-6" />
                             </Link>
@@ -125,8 +129,9 @@ export const Team = () => {
                             <Link
                               href={member.instagram}
                               target="_blank"
-                              referrerPolicy="no-referrer"
+                              rel="noopener noreferrer"
                               className="hover:text-violet-500 transition-colors"
+                              aria-label={`Perfil de Instagram de ${member.name}`}
                             >
                               <InstagramLogoIcon className="h-6 w-6" />
                             </Link>
@@ -147,6 +152,7 @@ export const Team = () => {
             variant="outline"
             size="icon"
             onClick={nextMember}
+            aria-label="Mostrar siguiente miembro"
             className="bg-blue-800 bg-opacity-50 hover:bg-violet-700"
           >
             <ChevronRightIcon className="h-8 w-8" />

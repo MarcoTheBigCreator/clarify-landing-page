@@ -1,4 +1,5 @@
 'use client';
+
 import { motion } from 'framer-motion';
 import { Card, CardContent } from './Card';
 import { cn } from '@/lib';
@@ -27,6 +28,8 @@ export const SectionWithImage = ({
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
           viewport={{ once: true }}
+          role="listitem"
+          aria-labelledby={`section-title-${section.title}`}
         >
           <Card
             className={cn(
@@ -35,10 +38,19 @@ export const SectionWithImage = ({
             )}
           >
             <CardContent className="p-6 text-center flex flex-col items-center">
-              <div className="flex items-center justify-center mb-2">
+              <div
+                className="flex items-center justify-center mb-2"
+                aria-hidden="true"
+              >
                 {section.icon}
               </div>
-              <h3 className="font-semibold text-xl mb-2">{section.title}</h3>
+              <h3
+                id={`section-title-${index}`}
+                className="font-semibold text-xl mb-2"
+                aria-live="polite"
+              >
+                {section.title}
+              </h3>
               <p className="text-gray-200">{section.description}</p>
             </CardContent>
           </Card>
