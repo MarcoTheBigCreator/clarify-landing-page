@@ -1,0 +1,145 @@
+{
+  "navbar": [
+    {
+      "name": "About Us",
+      "link": "#team"
+    },
+    {
+      "name": "Mission",
+      "link": "#mission"
+    },
+    {
+      "name": "Values",
+      "link": "#values"
+    },
+    {
+      "name": "Offer",
+      "link": "#offer"
+    },
+    {
+      "name": "Product",
+      "link": "#product"
+    }
+  ],
+
+  "whoWeAre": {
+    "title": "Who are we?",
+    "description": "We are five university students passionate about technology and accessibility, dedicated to creating innovative solutions for people with visual disabilities. With experience in artificial intelligence, design, and software development, we developed an application that empowers users and provides greater independence. Our passion for technology motivates us to overcome challenges and to constantly innovate."
+  },
+
+  "teamMembers": [
+    {
+      "name": "Karely Duran",
+      "role": "CEO, Full Stack",
+      "image": "/team-members/karely.jpg",
+      "github": "https://github.com/karelycode",
+      "linkedin": "https://www.linkedin.com/in/karelyd-code/",
+      "instagram": "https://www.instagram.com/karely.dv/"
+    },
+    {
+      "name": "Eder Ceniceros",
+      "role": "AI Expert",
+      "image": "/team-members/eder.jpg",
+      "github": "https://github.com/EderCeniceros",
+      "linkedin": "https://www.linkedin.com/in/eder-ricardo-ceniceros-solis-b53598276/",
+      "instagram": "https://www.instagram.com/ceniceroseder"
+    },
+    {
+      "name": "Estefania Leyva",
+      "role": "Business Manager",
+      "image": "/team-members/estefania.jpg",
+      "github": "",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/estefanialeyva_1905/"
+    },
+    {
+      "name": "Jacqueline Moreno",
+      "role": "UX/UI Designer",
+      "image": "/team-members/jacqueline.jpg",
+      "github": "https://github.com/xSotoJacqueline",
+      "linkedin": "https://mx.linkedin.com/in/jacqueline-moreno-soto-921a55325",
+      "instagram": "https://www.instagram.com/xsotojacqueline/"
+    },
+    {
+      "name": "Brayan Pastrana",
+      "role": "Mobile Developer",
+      "image": "/team-members/brayan.jpg",
+      "github": "https://github.com/BrayanPastranaP",
+      "linkedin": "https://www.linkedin.com/in/brayan-pastrana-002763326/",
+      "instagram": "https://www.instagram.com/brayan.pastrana.perez/"
+    }
+  ],
+
+  "sectionsInfo": [
+    {
+      "title": "Mission",
+      "description": "We are committed to improving the lives of people with visual disabilities through technology. We develop an application with artificial intelligence that offers accessible and personalized solutions to promote independence and active participation in society, empowering our users and promoting social awareness and commitment towards inclusion."
+    },
+    {
+      "title": "Vision",
+      "description": "We aim to transform the experience of people with visual disabilities, allowing them to explore the world more completely and satisfyingly. We aspire to be leaders in creating accessible and innovative technological solutions that break barriers and offer greater independence, being recognized worldwide for improving quality of life through artificial intelligence.",
+      "differentBackground": true
+    }
+  ],
+
+  "valuesTitle": "Our Values",
+  "values": [
+    {
+      "icon": "AccessibilityIcon",
+      "title": "Inclusion",
+      "description": "We promote inclusion throughout our development, ensuring that our solutions are accessible to everyone."
+    },
+    {
+      "icon": "HeartIcon",
+      "title": "Empathy",
+      "description": "We put ourselves in our users' shoes to understand their needs and create solutions that truly make a difference."
+    },
+    {
+      "icon": "CheckCircledIcon",
+      "title": "Responsibility",
+      "description": "We commit to creating accessible and safe technology that positively impacts the lives of people with visual disabilities."
+    },
+    {
+      "icon": "PersonIcon",
+      "title": "Collaboration",
+      "description": "We believe in the power of teamwork and the diversity of ideas to create more effective and inclusive solutions."
+    }
+  ],
+
+  "offersTitle": "What do we offer?",
+  "offers": [
+    {
+      "icon": "RocketIcon",
+      "title": "AI Detection",
+      "description": "We use advanced artificial intelligence to accurately and in real-time identify and describe the environment."
+    },
+    {
+      "icon": "SpeakerModerateIcon",
+      "title": "Voice Feedback",
+      "description": "We provide clear and detailed information through voice feedback, facilitating interaction and navigation."
+    },
+    {
+      "icon": "MobileIcon",
+      "title": "Intuitive and Functional Interface",
+      "description": "We offer an easy-to-use and accessible interface designed to simplify the user experience from the first moment."
+    }
+  ],
+
+  "meetClarify": {
+    "title": "Meet Clarify",
+    "info": [
+      {
+        "question": "What is it?",
+        "answer": "Clarify is an innovative mobile application that provides comprehensive assistance to people with visual impairment or blindness using the latest in artificial intelligence. Designed to enhance autonomy, safety, and quality of life, Clarify facilitates independent and reliable interaction with the environment."
+      },
+      {
+        "question": "What is our Value Proposition?",
+        "answer": "We transform the quality of life for people with visual disabilities through cutting-edge, personalized, and innovative technological solutions that provide greater independence and confidence in their daily lives."
+      }
+    ]
+  },
+
+  "footer": {
+    "description": "© Clarify 2024. All rights reserved."
+  }
+}

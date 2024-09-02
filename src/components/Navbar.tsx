@@ -1,24 +1,22 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
   Cross1Icon,
   DividerVerticalIcon,
   HamburgerMenuIcon,
 } from '@radix-ui/react-icons';
-import { navbar } from '@/locales';
 import { titleFont } from '@/config';
 import { Logo } from './ui/Logo';
 import { ThemeSwitch } from './ui/ThemeSwitch';
 import { LanguageButton } from './ui/LanguageButton';
 
-interface NavbarItem {
-  name: string;
-  link: string;
-}
-
 export const Navbar = () => {
+  const t = useTranslations();
+  const navbar = t.raw('navbar') as NavbarItem[];
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -83,7 +81,7 @@ export const Navbar = () => {
               transition={{ delay: 0.5 + navbar.length * 0.1 }}
               role="listitem"
             >
-              <LanguageButton text="EN" href="/en" />
+              <LanguageButton />
             </motion.li>
           </ul>
         </nav>
@@ -154,7 +152,7 @@ export const Navbar = () => {
                   className="group"
                   onClick={toggleMenu}
                 >
-                  <LanguageButton text="EN" href="/en" />
+                  <LanguageButton />
                 </motion.li>
               </div>
             </ul>

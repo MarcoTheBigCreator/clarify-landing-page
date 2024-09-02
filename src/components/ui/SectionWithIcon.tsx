@@ -15,7 +15,7 @@ interface SectionWithImageProps {
   className?: string;
 }
 
-export const SectionWithImage = ({
+export const SectionWithIcon = ({
   sections,
   className,
 }: SectionWithImageProps) => {
