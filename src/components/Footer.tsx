@@ -16,7 +16,7 @@ export const Footer = () => {
       role="contentinfo"
     >
       <div className="container mx-auto text-center">
-        <p className="text-blue-200" aria-label="Clarify. All rights reserved.">
+        <p className="text-blue-200" aria-label={t('description')}>
           {t('description')}
         </p>
       </div>

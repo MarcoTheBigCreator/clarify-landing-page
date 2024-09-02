@@ -45,7 +45,7 @@ export const SectionWithIcon = ({
                 {section.icon}
               </div>
               <h3
-                id={`section-title-${index}`}
+                id={`section-title-${section.title}`}
                 className="text-white dark:text-violet-400 font-semibold text-xl mb-2"
                 aria-live="polite"
               >

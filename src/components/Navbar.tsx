@@ -12,6 +12,7 @@ import { titleFont } from '@/config';
 import { Logo } from './ui/Logo';
 import { ThemeSwitch } from './ui/ThemeSwitch';
 import { LanguageButton } from './ui/LanguageButton';
+import Link from 'next/link';
 
 export const Navbar = () => {
   const t = useTranslations();
@@ -38,8 +39,13 @@ export const Navbar = () => {
           transition={{ delay: 0.5 }}
           className={`${titleFont.className} text-4xl font-bold flex items-center `}
         >
-          <Logo.Icon className="h-20 w-30 pb-4 mr-2" aria-hidden="true" />
-          Clarify
+          <Link
+            href="/"
+            className="flex items-center group hover:text-violet-300 dark:hover:text-violet-400"
+          >
+            <Logo.Icon className="h-20 w-30 pb-4 mr-2" aria-hidden="true" />
+            Clarify
+          </Link>
         </motion.h1>
         <nav className="hidden md:block" aria-label="Main navigation">
           <ul className="flex space-x-4">
@@ -53,7 +59,7 @@ export const Navbar = () => {
               >
                 <a
                   href={navbarItem.link}
-                  className="hover:text-violet-400 transition-colors focus:outline-none focus-visible:ring focus-visible:ring-violet-500"
+                  className="hover:text-violet-300 dark:hover:text-violet-400 transition-colors focus:outline-none focus-visible:ring focus-visible:ring-violet-500"
                   rel="noreferrer"
                 >
                   {navbarItem.name}
@@ -62,10 +68,18 @@ export const Navbar = () => {
             ))}
 
             {/* Theme and Dark mode */}
-            <DividerVerticalIcon
-              className="h-6 w-6 text-white"
-              aria-hidden="true"
-            />
+            <motion.li
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 + navbar.length * 0.1 }}
+              role="listitem"
+            >
+              <DividerVerticalIcon
+                className="h-6 w-6 text-white"
+                aria-hidden="true"
+              />
+            </motion.li>
+
             <motion.li
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}

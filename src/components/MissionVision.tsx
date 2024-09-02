@@ -2,8 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { SectionsInfoGrid } from './ui/SectionsInfoGrid';
+import { useTranslations } from 'next-intl';
 
 export const MissionVision = () => {
+  const t = useTranslations('missionVision');
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -15,7 +18,7 @@ export const MissionVision = () => {
       aria-labelledby="mission-vision-title"
     >
       <h2 id="mission-vision-title" className="sr-only">
-        Misión y Visión
+        {t('title')}
       </h2>
       <SectionsInfoGrid />
     </motion.section>

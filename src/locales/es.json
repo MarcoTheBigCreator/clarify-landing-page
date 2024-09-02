@@ -1,4 +1,33 @@
 {
+  "notFoundAccesibility": {
+    "backButtonLabel": "Volver al inicio"
+  },
+
+  "navbarAccesibility": {
+    "navLabel": "Navegación principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mobileMenu": "Menú móvil"
+  },
+
+  "teamAccesibility": {
+    "backButtonLabel": "Mostrar miembro anterior",
+    "githubLabel": "Perfil de GitHub de",
+    "linkedinLabel": "Perfil de LinkedIn de",
+    "instagramLabel": "Perfil de Instagram de",
+    "nextButtonLabel": "Mostrar siguiente miembro"
+  },
+
+  "productPreviewAccesibility": {
+    "videoLabel": "Vista previa del producto Clarify"
+  },
+
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que buscas no existe.",
+    "backButton": "Volver al inicio"
+  },
+
   "navbar": [
     {
       "name": "Sobre Nosotros",
@@ -70,6 +99,9 @@
     }
   ],
 
+  "missionVision": {
+    "title": "Misión y Visión"
+  },
   "sectionsInfo": [
     {
       "title": "Misión",

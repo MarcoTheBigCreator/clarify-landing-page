@@ -1,4 +1,33 @@
 {
+  "notFoundAccesibility": {
+    "backButtonLabel": "Back to Home"
+  },
+
+  "navbarAccesibility": {
+    "navLabel": "Main Navigation",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "mobileMenu": "Mobile Menu"
+  },
+
+  "teamAccesibility": {
+    "backButtonLabel": "Show previous member",
+    "githubLabel": "GitHub Profile of",
+    "linkedinLabel": "LinkedIn Profile of",
+    "instagramLabel": "Instagram Profile of",
+    "nextButtonLabel": "Show next member"
+  },
+
+  "productPreviewAccesibility": {
+    "videoLabel": "Clarify product preview"
+  },
+
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "backButton": "Back to Home"
+  },
+
   "navbar": [
     {
       "name": "About Us",
@@ -70,6 +99,9 @@
     }
   ],
 
+  "missionVision": {
+    "title": "Mission and Vision"
+  },
   "sectionsInfo": [
     {
       "title": "Mission",
