@@ -98,6 +98,8 @@ export const Team = () => {
                         src={member.image}
                         alt={`${member.name} profile picture`}
                         className="w-48 h-48 rounded-full mx-auto mb-10 border-4 border-violet-400 object-cover"
+                        placeholder="blur"
+                        blurDataURL="/squareLogo.png"
                       />
                       <h3 className="font-semibold text-xl">{member.name}</h3>
                       <p className="text-violet-400">{member.role}</p>

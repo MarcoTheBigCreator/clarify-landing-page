@@ -27,7 +27,8 @@ export const ProductPreview = () => {
             className="h-full w-full object-cover"
             controls
             controlsList="nodownload"
-            poster="https://res.cloudinary.com/dmlpgks2h/image/upload/v1725234522/clarify/xbwdrw6asxcfxks4zlqg.png"
+            playsInline
+            poster="/rectangularLogo.png"
             aria-label="Vista previa del producto Clarify"
           >
             <source
