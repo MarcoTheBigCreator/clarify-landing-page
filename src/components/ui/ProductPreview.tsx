@@ -32,7 +32,7 @@ export const ProductPreview = () => {
             aria-label="Vista previa del producto Clarify"
           >
             <source
-              src="https://res.cloudinary.com/dmlpgks2h/video/upload/v1725233438/clarify/z1pnzxue9yeihhnbd6wn.mov"
+              src="https://res.cloudinary.com/dmlpgks2h/video/upload/f_auto:video,q_auto/v1/clarify/z1pnzxue9yeihhnbd6wn"
               type="video/mp4"
             />
             <track
@@ -50,7 +50,8 @@ export const ProductPreview = () => {
             Tu navegador no soporta la etiqueta de video.
           </video>
         </div>
-        <div className="absolute bottom-1 left-20 w-28 h-1.5 bg-gray-500 rounded"></div>
+        <div className="absolute top-2 left-20 w-[7.4rem] h-1.5 bg-gray-600 rounded-full"></div>
+        <div className="absolute -bottom-2 left-[7.7rem] w-6 h-6 bg-gray-600 rounded-full"></div>
       </div>
     </div>
   );
