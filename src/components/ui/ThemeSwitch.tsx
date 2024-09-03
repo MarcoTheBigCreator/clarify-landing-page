@@ -45,12 +45,12 @@ export const ThemeSwitch = () => {
     >
       {resolvedTheme === 'dark' ? (
         <SunIcon
-          className={`w-6 h-6 text-white hover:text-violet-500 icon-transition ${iconAnimation}`}
+          className={`w-6 h-6 text-white hover:text-violet-300 dark:hover:text-violet-400 icon-transition ${iconAnimation}`}
           aria-hidden="true"
         />
       ) : (
         <MoonIcon
-          className={`w-6 h-6 text-white hover:text-violet-500 icon-transition ${iconAnimation}`}
+          className={`w-6 h-6 text-white hover:text-violet-300 dark:hover:text-violet-400 icon-transition ${iconAnimation}`}
           aria-hidden="true"
         />
       )}

@@ -15,7 +15,7 @@ interface SectionWithImageProps {
   className?: string;
 }
 
-export const SectionWithImage = ({
+export const SectionWithIcon = ({
   sections,
   className,
 }: SectionWithImageProps) => {
@@ -45,7 +45,7 @@ export const SectionWithImage = ({
                 {section.icon}
               </div>
               <h3
-                id={`section-title-${index}`}
+                id={`section-title-${section.title}`}
                 className="text-white dark:text-violet-400 font-semibold text-xl mb-2"
                 aria-live="polite"
               >

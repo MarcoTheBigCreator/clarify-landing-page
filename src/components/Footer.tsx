@@ -1,8 +1,11 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 
 export const Footer = () => {
+  const t = useTranslations('footer');
+
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -13,8 +16,8 @@ export const Footer = () => {
       role="contentinfo"
     >
       <div className="container mx-auto text-center">
-        <p className="text-blue-200" aria-label="Clarify. All rights reserved.">
-          &copy; Clarify. All rights reserved.
+        <p className="text-blue-200" aria-label={t('description')}>
+          {t('description')}
         </p>
       </div>
     </motion.footer>

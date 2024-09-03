@@ -28,7 +28,7 @@ export const ProductPreview = () => {
             controls
             controlsList="nodownload"
             playsInline
-            poster="/rectangularLogo.webp"
+            poster="/logos/rectangularLogo.webp"
             aria-label="Vista previa del producto Clarify"
           >
             <source

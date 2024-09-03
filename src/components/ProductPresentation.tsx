@@ -1,11 +1,15 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ProductPreview } from './ui/ProductPreview';
 import { titleFont } from '@/config';
 import { ProductDescription } from './ui/ProductDescription';
 
 export const ProductPresentation = () => {
+  const t = useTranslations('meetClarify');
+  const title = t('title');
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -20,7 +24,7 @@ export const ProductPresentation = () => {
         id="product-heading"
         className={`${titleFont.className} text-blue-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl flex align-middle justify-center font-semibold text-center`}
       >
-        Conoce Clarify
+        {title}
       </h2>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">

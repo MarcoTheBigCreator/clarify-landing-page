@@ -4,18 +4,11 @@ import { titleFont } from '@/config';
 import { cn } from '@/lib';
 import { motion } from 'framer-motion';
 
-interface SectionInfoProps {
-  key: number;
-  title: string;
-  description: string;
-  differentBackground?: boolean;
-}
-
 export const SectionInfo = ({
   title,
   description,
   differentBackground,
-}: SectionInfoProps) => {
+}: SectionInfo) => {
   return (
     <motion.div
       initial={{ x: -50, opacity: 0 }}

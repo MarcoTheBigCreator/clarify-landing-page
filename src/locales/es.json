@@ -1,0 +1,232 @@
+{
+  "title": {
+    "template": "%s | Clarify",
+    "default": "Clarify"
+  },
+  "description": "Clarify es una innovadora aplicación móvil diseñada para personas con discapacidad visual, utilizando inteligencia artificial avanzada para mejorar la independencia y la interacción con su entorno.",
+  "applicationName": "Clarify",
+  "authors": [
+    { "name": "Marco Rodríguez" },
+    { "name": "Karely Durán" },
+    { "name": "Eder Ceniceros" },
+    { "name": "Estefanía Leyva" },
+    { "name": "Jacqueline Moreno" },
+    { "name": "Brayan Pastrana" },
+    { "name": "Clarify" }
+  ],
+  "generator": "Next.js",
+  "keywords": [
+    "Accesibilidad",
+    "Inteligencia Artificial",
+    "Discapacidad Visual",
+    "Inclusión",
+    "Tecnología Asistiva",
+    "Flutter",
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Typescript",
+    "Clarify",
+    "Marco Rodríguez",
+    "Karely Durán",
+    "Eder Ceniceros",
+    "Estefanía Leyva",
+    "Jacqueline Moreno",
+    "Brayan Pastrana",
+    "Vercel"
+  ],
+  "creator": "Marco Rodríguez",
+  "publisher": "Marco Rodríguez",
+  "metadataBase": "https://clarify-page.vercel.app",
+  "openGraph": {
+    "title": "Home | Clarify",
+    "description": "Clarify, una aplicación móvil innovadora que utiliza inteligencia artificial para ofrecer asistencia integral a personas con discapacidad visual, promoviendo su autonomía y calidad de vida.",
+    "url": "https://clarify-page.vercel.app",
+    "siteName": "Clarify",
+    "type": "website",
+    "locale": "es_MX",
+    "images": ["/logos/squareLogo.png"]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Home | Clarify",
+    "description": "Clarify, una aplicación móvil innovadora que utiliza inteligencia artificial para ofrecer asistencia integral a personas con discapacidad visual, promoviendo su autonomía y calidad de vida.",
+    "images": ["/logos/squareLogo.png"]
+  },
+
+  "notFoundAccesibility": {
+    "backButtonLabel": "Volver al inicio"
+  },
+
+  "navbarAccesibility": {
+    "navLabel": "Navegación principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mobileMenu": "Menú móvil"
+  },
+
+  "teamAccesibility": {
+    "backButtonLabel": "Mostrar miembro anterior",
+    "githubLabel": "Perfil de GitHub de",
+    "linkedinLabel": "Perfil de LinkedIn de",
+    "instagramLabel": "Perfil de Instagram de",
+    "nextButtonLabel": "Mostrar siguiente miembro"
+  },
+
+  "productPreviewAccesibility": {
+    "videoLabel": "Vista previa del producto Clarify"
+  },
+
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que buscas no existe.",
+    "backButton": "Volver al inicio"
+  },
+
+  "navbar": [
+    {
+      "name": "Sobre Nosotros",
+      "link": "#team"
+    },
+    {
+      "name": "Misión",
+      "link": "#mission"
+    },
+    {
+      "name": "Valores",
+      "link": "#values"
+    },
+    {
+      "name": "Oferta",
+      "link": "#offer"
+    },
+    {
+      "name": "Producto",
+      "link": "#product"
+    }
+  ],
+
+  "whoWeAre": {
+    "title": "¿Quiénes somos?",
+    "description": "Somos cinco universitarios apasionados por la tecnología y la accesibilidad, dedicados a crear soluciones innovadoras para personas con discapacidad visual. Con experiencia en inteligencia artificial, diseño y desarrollo de software, desarrollamos una aplicación que empodera a los usuarios y les brinda mayor independencia. Nuestra pasión por la tecnología nos motiva a superar retos y a innovar constantemente."
+  },
+
+  "teamMembers": [
+    {
+      "name": "Karely Durán",
+      "role": "CEO, Full Stack",
+      "image": "/team-members/karely.jpg",
+      "github": "https://github.com/karelycode",
+      "linkedin": "https://www.linkedin.com/in/karelyd-code/",
+      "instagram": "https://www.instagram.com/karely.dv/"
+    },
+    {
+      "name": "Eder Ceniceros",
+      "role": "Experto en IA",
+      "image": "/team-members/eder.jpg",
+      "github": "https://github.com/EderCeniceros",
+      "linkedin": "https://www.linkedin.com/in/eder-ricardo-ceniceros-solis-b53598276/",
+      "instagram": "https://www.instagram.com/ceniceroseder"
+    },
+    {
+      "name": "Estefanía Leyva",
+      "role": "Gerente de Negocios",
+      "image": "/team-members/estefania.jpg",
+      "github": "",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/estefanialeyva_1905/"
+    },
+    {
+      "name": "Jacqueline Moreno",
+      "role": "Diseñadora UX/UI",
+      "image": "/team-members/jacqueline.jpg",
+      "github": "https://github.com/xSotoJacqueline",
+      "linkedin": "https://mx.linkedin.com/in/jacqueline-moreno-soto-921a55325",
+      "instagram": "https://www.instagram.com/xsotojacqueline/"
+    },
+    {
+      "name": "Brayan Pastrana",
+      "role": "Desarrollador Móvil",
+      "image": "/team-members/brayan.jpg",
+      "github": "https://github.com/BrayanPastranaP",
+      "linkedin": "https://www.linkedin.com/in/brayan-pastrana-002763326/",
+      "instagram": "https://www.instagram.com/brayan.pastrana.perez/"
+    }
+  ],
+
+  "missionVision": {
+    "title": "Misión y Visión"
+  },
+  "sectionsInfo": [
+    {
+      "title": "Misión",
+      "description": "Estamos comprometidos a mejorar la vida de las personas con discapacidad visual a través de la tecnología. Desarrollamos una aplicación con inteligencia artificial que ofrece soluciones accesibles y personalizadas para fomentar la independencia y la participación activa en la sociedad, empoderando a nuestros usuarios y promoviendo la conciencia y el compromiso social hacia la inclusión."
+    },
+    {
+      "title": "Visión",
+      "description": "Queremos transformar la experiencia de las personas con discapacidad visual, permitiéndoles explorar el mundo de manera más completa y satisfactoria. Aspiramos a ser líderes en la creación de soluciones tecnológicas accesibles e innovadoras que rompan barreras y ofrezcan mayor independencia, siendo reconocidos mundialmente por mejorar la calidad de vida a través de la inteligencia artificial.",
+      "differentBackground": true
+    }
+  ],
+
+  "valuesTitle": "Nuestros Valores",
+  "values": [
+    {
+      "icon": "AccessibilityIcon",
+      "title": "Inclusión",
+      "description": "Promovemos la inclusión en toda nuestro desarrollo, asegurándonos de que nuestras soluciones sean accesibles para todos."
+    },
+    {
+      "icon": "HeartIcon",
+      "title": "Empatía",
+      "description": "Nos ponemos en el lugar de nuestros usuarios para entender sus necesidades y crear soluciones que realmente marquen la diferencia."
+    },
+    {
+      "icon": "CheckCircledIcon",
+      "title": "Responsabilidad",
+      "description": "Asumimos el compromiso de crear tecnología accesible y segura que impacte positivamente la vida de las personas con discapacidad visual."
+    },
+    {
+      "icon": "PersonIcon",
+      "title": "Colaboración",
+      "description": "Creemos en el poder del trabajo en equipo y en la diversidad de ideas para crear soluciones más efectivas e inclusivas."
+    }
+  ],
+
+  "offersTitle": "¿Qué ofrecemos?",
+  "offers": [
+    {
+      "icon": "RocketIcon",
+      "title": "Detección a través de AI",
+      "description": "Utilizamos inteligencia artificial avanzada para identificar y describir el entorno de manera precisa y en tiempo real."
+    },
+    {
+      "icon": "SpeakerModerateIcon",
+      "title": "Retroalimentación por voz",
+      "description": "Brindamos información clara y detallada mediante retroalimentación por voz, facilitando la interacción y la navegación."
+    },
+    {
+      "icon": "MobileIcon",
+      "title": "Interfaz intuitiva y funcional",
+      "description": "Ofrecemos una interfaz fácil de usar y accesible, diseñada para simplificar la experiencia del usuario desde el primer momento."
+    }
+  ],
+
+  "meetClarify": {
+    "title": "Conoce Clarify",
+    "info": [
+      {
+        "question": "¿Qué es?",
+        "answer": "Clarify es una aplicación móvil innovadora que ofrece asistencia integral a personas con debilidad o discapacidad visual, utilizando lo último en inteligencia artificial. Diseñada para potenciar la autonomía, seguridad y calidad de vida, Clarify facilita la interacción independiente y confiable con el entorno."
+      },
+      {
+        "question": "¿Cuál es nuestra Propuesta de Valor?",
+        "answer": "Transformamos la calidad de vida de las personas con discapacidad visual mediante soluciones tecnológicas de vanguardia, personalizadas e innovadoras, que les brindan mayor independencia y confianza en su día a día."
+      }
+    ]
+  },
+
+  "footer": {
+    "description": "© Clarify 2024. Todos los derechos reservados."
+  }
+}

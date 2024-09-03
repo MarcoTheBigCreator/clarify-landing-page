@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronLeftIcon,
@@ -12,11 +14,12 @@ import {
 } from '@radix-ui/react-icons';
 import { Button } from './ui/Button';
 import { Card, CardContent } from './ui/Card';
-import { titleFont } from '@/config';
-import { teamMembers } from '@/locales';
-import Image from 'next/image';
+import { TeamPresentation } from './ui/TeamPresentation';
 
 export const Team = () => {
+  const t = useTranslations();
+  const teamMembers = t.raw('teamMembers') as TeamMember[];
+
   const [currentMember, setCurrentMember] = useState(0);
 
   const nextMember = () => {
@@ -38,19 +41,9 @@ export const Team = () => {
       id="team"
       className="space-y-16 mt-6 md:mt-24"
     >
-      <h2
-        className={`${titleFont.className} text-blue-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl md:text-6xl font-semibold text-center`}
-      >
-        ¿Quiénes somos?
-      </h2>
-      <p className="max-w-3xl mx-auto text-center text-xl text-zinc-700 dark:text-gray-200">
-        Somos cinco universitarios apasionados por la tecnología y la
-        accesibilidad, dedicados a crear soluciones innovadoras para personas
-        con discapacidad visual. Con experiencia en inteligencia artificial,
-        diseño y desarrollo de software, desarrollamos una aplicación que
-        empodera a los usuarios y les brinda mayor independencia. Nuestra pasión
-        por la tecnología nos motiva a superar retos y a innovar constantemente.
-      </p>
+      {/* Team presentation */}
+      <TeamPresentation />
+
       <div className="flex items-center justify-center space-x-4">
         {/* Back Button */}
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>

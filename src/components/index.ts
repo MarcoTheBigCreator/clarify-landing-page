@@ -11,6 +11,7 @@ export * from './ui/ProductDescription';
 export * from './ui/ProductPreview';
 export * from './ui/SectionInfo';
 export * from './ui/SectionsInfoGrid';
-export * from './ui/SectionWithImage';
+export * from './ui/SectionWithIcon';
+export * from './ui/TeamPresentation';
 export * from './ui/ThemeSwitch';
 export * from './Values';
