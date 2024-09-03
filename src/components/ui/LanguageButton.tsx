@@ -15,10 +15,8 @@ export const LanguageButton = ({ icon }: LanguageButtonProps) => {
   const [currentHash, setCurrentHash] = useState<string>('');
 
   useEffect(() => {
-    // Actualiza el hash del estado cuando el componente se monta
     setCurrentHash(window.location.hash);
 
-    // Escucha los cambios en la URL y actualiza el estado del hash
     const handleHashChange = () => setCurrentHash(window.location.hash);
     window.addEventListener('hashchange', handleHashChange);
 
@@ -34,14 +32,12 @@ export const LanguageButton = ({ icon }: LanguageButtonProps) => {
     ? pathname.replace(/^\/en/, '/es')
     : pathname.replace(/^\/es/, '/en');
 
-  // Construir el href con el hash y parámetros de búsqueda
   const href = `${newPath}${
     searchParams ? '?' + searchParams.toString() : ''
   }${currentHash}`;
 
   const onHandleLocale = () => {
-    // Navegar a la nueva URL con el hash preservado
-    router.push(href);
+    router.replace(href);
   };
 
   return (
