@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
+import { getMessages, getTranslations } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
 import '../globals.css';
 import { Footer, Navbar } from '@/components';
 import { poppins } from '@/config';
 import { Providers } from '@/providers';
-import { getMessages, getTranslations } from 'next-intl/server';
-import { NextIntlClientProvider } from 'next-intl';
 
 export async function generateMetadata(params: {
   locale: string;
@@ -81,6 +82,7 @@ export default async function RootLayout({
             </Providers>
           </div>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
