@@ -1,4 +1,59 @@
 {
+  "title": {
+    "template": "%s | Clarify",
+    "default": "Clarify"
+  },
+  "description": "Clarify es una innovadora aplicación móvil diseñada para personas con discapacidad visual, utilizando inteligencia artificial avanzada para mejorar la independencia y la interacción con su entorno.",
+  "applicationName": "Clarify",
+  "authors": [
+    { "name": "Marco Rodríguez" },
+    { "name": "Karely Durán" },
+    { "name": "Eder Ceniceros" },
+    { "name": "Estefanía Leyva" },
+    { "name": "Jacqueline Moreno" },
+    { "name": "Brayan Pastrana" },
+    { "name": "Clarify" }
+  ],
+  "generator": "Next.js",
+  "keywords": [
+    "Accesibilidad",
+    "Inteligencia Artificial",
+    "Discapacidad Visual",
+    "Inclusión",
+    "Tecnología Asistiva",
+    "Flutter",
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Typescript",
+    "Clarify",
+    "Marco Rodríguez",
+    "Karely Durán",
+    "Eder Ceniceros",
+    "Estefanía Leyva",
+    "Jacqueline Moreno",
+    "Brayan Pastrana",
+    "Vercel"
+  ],
+  "creator": "Marco Rodríguez",
+  "publisher": "Marco Rodríguez",
+  "metadataBase": "https://clarify-page.vercel.app",
+  "openGraph": {
+    "title": "Home | Clarify",
+    "description": "Clarify, una aplicación móvil innovadora que utiliza inteligencia artificial para ofrecer asistencia integral a personas con discapacidad visual, promoviendo su autonomía y calidad de vida.",
+    "url": "https://clarify-page.vercel.app",
+    "siteName": "Clarify",
+    "type": "website",
+    "locale": "es_MX",
+    "images": ["/logos/squareLogo.png"]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Home | Clarify",
+    "description": "Clarify, una aplicación móvil innovadora que utiliza inteligencia artificial para ofrecer asistencia integral a personas con discapacidad visual, promoviendo su autonomía y calidad de vida.",
+    "images": ["/logos/squareLogo.png"]
+  },
+
   "notFoundAccesibility": {
     "backButtonLabel": "Volver al inicio"
   },

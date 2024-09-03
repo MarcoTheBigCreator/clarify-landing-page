@@ -1,10 +1,7 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { ThemeProvider } from 'next-themes';
 
 export default function NotFound() {
-  const t = useTranslations('notFound');
-
   return (
     <html lang="en">
       <body>
@@ -23,10 +20,10 @@ export default function NotFound() {
                 role="heading"
                 aria-level={2}
               >
-                {t('title')}
+                Page Not Found
               </p>
               <p className="text-blue-200 dark:text-blue-300 mt-4 pb-4 border-b-2 text-center">
-                {t('description')}
+                Sorry, the page you are looking for does not exist.
               </p>
               <Link
                 href="/"
@@ -47,7 +44,7 @@ export default function NotFound() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>{t('backButton')}</span>
+                <span>Back to home</span>
               </Link>
             </div>
           </div>
