@@ -1,6 +1,6 @@
 # [Clarify | Landing Page](https://clarify-page.vercel.app)
 
-Clarify is an innovative landing page designed for the Clarify app, which utilizes advanced artificial intelligence to enhance the independence and interaction of visually impaired individuals with their environment. This landing page aims to highlight the features and benefits of the app, focusing on accessibility and user experience.
+Landing page for a mobile app that supports blind individuals, developed with Next.js, Tailwind CSS, and Framer Motion to highlight accessibility and Clarify’s brand.
 
 ### Technologies Used:
 
