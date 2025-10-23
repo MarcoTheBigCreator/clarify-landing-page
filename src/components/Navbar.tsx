@@ -29,7 +29,7 @@ export const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100 }}
-      className="px-4 py-2 bg-blue-800 bg-opacity-95 text-white dark:bg-opacity-50 backdrop-blur-md fixed w-full z-20"
+      className="px-4 py-2 bg-primary-600 dark:bg-primary-700 bg-opacity-95 text-white dark:bg-opacity-50 backdrop-blur-md fixed w-full z-20"
       role="banner"
     >
       <div className="container mx-auto flex justify-between items-center">
@@ -41,7 +41,7 @@ export const Navbar = () => {
         >
           <Link
             href="/"
-            className="flex items-center group hover:text-violet-300 dark:hover:text-violet-400"
+            className="flex items-center group hover:text-violet-500 dark:hover:text-violet-500"
           >
             <Logo.Icon className="h-20 w-30 pb-4 mr-2" aria-hidden="true" />
             Clarify
@@ -59,7 +59,7 @@ export const Navbar = () => {
               >
                 <a
                   href={navbarItem.link}
-                  className="hover:text-violet-300 dark:hover:text-violet-400 transition-colors focus:outline-none focus-visible:ring focus-visible:ring-violet-500"
+                  className="hover:text-violet-500 dark:hover:text-violet-500 transition-colors focus:outline-none focus-visible:ring focus-visible:ring-violet-500"
                   rel="noreferrer"
                 >
                   {navbarItem.name}

@@ -7,7 +7,7 @@ export const TeamPresentation = () => {
   return (
     <>
       <h2
-        className={`${titleFont.className} text-blue-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl md:text-6xl font-semibold text-center`}
+        className={`${titleFont.className} text-primary-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl md:text-6xl font-semibold text-center`}
       >
         {t('title')}
       </h2>

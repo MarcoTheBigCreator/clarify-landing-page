@@ -12,11 +12,11 @@ export const Footer = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-blue-800 dark:bg-blue-900 py-6 px-4 mt-14"
+      className="bg-primary-600 dark:bg-primary-700 py-6 px-4 mt-14"
       role="contentinfo"
     >
       <div className="container mx-auto text-center">
-        <p className="text-blue-200" aria-label={t('description')}>
+        <p className="text-white" aria-label={t('description')}>
           {t('description')}
         </p>
       </div>

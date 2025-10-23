@@ -33,7 +33,7 @@ export const SectionWithIcon = ({
         >
           <Card
             className={cn(
-              'bg-blue-800 bg-opacity-95 dark:bg-opacity-50 backdrop-blur-md border-blue-400 dark:border-blue-600',
+              'bg-primary-500 bg-opacity-95 dark:bg-opacity-50 backdrop-blur-md border-primary-400 dark:border-primary-400',
               className
             )}
           >

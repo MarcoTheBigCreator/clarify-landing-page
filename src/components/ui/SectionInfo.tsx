@@ -16,14 +16,14 @@ export const SectionInfo = ({
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
       className={cn('space-y-8 p-6', {
-        'bg-violet-800 bg-opacity-90 dark:bg-opacity-50 rounded-lg backdrop-blur-md':
+        'bg-primary-600 dark:bg-primary-700 bg-opacity-90 dark:bg-opacity-50 rounded-lg backdrop-blur-md':
           differentBackground,
       })}
       role="listitem"
     >
       <h3
         className={cn(
-          `${titleFont.className} text-5xl font-semibold text-blue-700 drop-shadow-blue dark:drop-shadow-text dark:text-white`,
+          `${titleFont.className} text-5xl font-semibold text-primary-700 drop-shadow-blue dark:drop-shadow-text dark:text-white`,
           {
             'text-white drop-shadow-text': differentBackground,
           }
