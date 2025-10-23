@@ -44,7 +44,7 @@ export const LanguageButton = ({ icon }: LanguageButtonProps) => {
     <button
       type="button"
       onClick={onHandleLocale}
-      className="focus:outline-none focus:ring-2 focus:ring-violet-500 rounded-full text-lg h-6 w-6 flex items-center justify-center disabled:cursor-not-allowed hover:text-violet-300 dark:hover:text-violet-400"
+      className="focus:outline-none focus:ring-2 focus:ring-violet-500 rounded-full text-lg h-6 w-6 flex items-center justify-center disabled:cursor-not-allowed hover:text-violet-500 dark:hover:text-violet-500"
       aria-label={`Cambiar idioma a ${text}`}
     >
       {icon && (

@@ -40,7 +40,7 @@ export const Values = () => {
     >
       <h2
         id="values-title"
-        className={`${titleFont.className} text-blue-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl font-semibold text-center`}
+        className={`${titleFont.className} text-primary-700 dark:text-white drop-shadow-blue dark:drop-shadow-text text-5xl font-semibold text-center`}
       >
         {title}
       </h2>

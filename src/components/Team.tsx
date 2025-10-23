@@ -52,7 +52,7 @@ export const Team = () => {
             size="icon"
             onClick={prevMember}
             aria-label="Mostrar miembro anterior"
-            className="bg-blue-800 bg-opacity-95 dark:bg-opacity-50 hover:bg-violet-700"
+            className="bg-primary-600 dark:bg-primary-400 bg-opacity-95 dark:bg-opacity-50 hover:bg-violet-700 dark:hover:bg-violet-600"
           >
             <ChevronLeftIcon className="h-8 w-8 text-white" />
           </Button>
@@ -80,10 +80,10 @@ export const Team = () => {
                   aria-hidden={offset !== 0}
                 >
                   <Card
-                    className={`w-64 bg-blue-800 bg-opacity-95 dark:bg-opacity-50 backdrop-blur-md border-blue-400 dark:border-blue-600 ${
+                    className={`w-64 bg-primary-600 bg-opacity-95 dark:bg-opacity-50 backdrop-blur-md border-primary-300 dark:border-primary-400 ${
                       offset !== 0
                         ? 'hidden md:block'
-                        : 'drop-shadow-blue dark:drop-shadow-purple'
+                        : 'drop-shadow-blue-dark dark:drop-shadow-blue'
                     }`}
                   >
                     <CardContent className="p-6 text-center">
@@ -92,14 +92,14 @@ export const Team = () => {
                         height={300}
                         src={member.image}
                         alt={`${member.name} profile picture`}
-                        className="w-48 h-48 rounded-full mx-auto mb-10 border-4 border-blue-500 dark:border-violet-400 object-cover"
+                        className="w-48 h-48 rounded-full mx-auto mb-10 border-4 border-primary-400 dark:border-primary-300 object-cover"
                         placeholder="blur"
                         blurDataURL={member.image}
                       />
                       <h3 className="font-semibold text-xl text-white">
                         {member.name}
                       </h3>
-                      <p className="text-blue-300 dark:text-violet-400">
+                      <p className="text-primary-200 dark:text-violet-500">
                         {member.role}
                       </p>
                       {offset === 0 && (
@@ -109,7 +109,7 @@ export const Team = () => {
                               href={member.github}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="hover:text-violet-400 dark:hover:text-violet-500 transition-colors text-white"
+                              className="hover:text-violet-500 dark:hover:text-violet-500 transition-colors text-white"
                               aria-label={`Perfil de GitHub de ${member.name}`}
                             >
                               <GitHubLogoIcon className="h-6 w-6" />
@@ -120,7 +120,7 @@ export const Team = () => {
                               href={member.linkedin}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="hover:text-violet-400 dark:hover:text-violet-500 transition-colors text-white"
+                              className="hover:text-violet-500 dark:hover:text-violet-500 transition-colors text-white"
                               aria-label={`Perfil de LinkedIn de ${member.name}`}
                             >
                               <LinkedInLogoIcon className="h-6 w-6" />
@@ -131,7 +131,7 @@ export const Team = () => {
                               href={member.instagram}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="hover:text-violet-400 dark:hover:text-violet-500 transition-colors text-white"
+                              className="hover:text-violet-500 dark:hover:text-violet-500 transition-colors text-white"
                               aria-label={`Perfil de Instagram de ${member.name}`}
                             >
                               <InstagramLogoIcon className="h-6 w-6" />
@@ -154,7 +154,7 @@ export const Team = () => {
             size="icon"
             onClick={nextMember}
             aria-label="Mostrar siguiente miembro"
-            className="bg-blue-800 bg-opacity-95 dark:bg-opacity-50 hover:bg-violet-700"
+            className="bg-primary-600 dark:bg-primary-400 bg-opacity-95 dark:bg-opacity-50 hover:bg-violet-700 dark:hover:bg-violet-600"
           >
             <ChevronRightIcon className="h-8 w-8 text-white" />
           </Button>

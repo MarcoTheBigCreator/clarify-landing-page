@@ -14,12 +14,12 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply rounded-md bg-gradient-to-b from-zinc-900 to-zinc-800;
+  @apply rounded-md bg-white dark:bg-gradient-to-b dark:from-zinc-900 dark:to-zinc-800;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply rounded-md bg-gradient-to-t from-blue-800 to-blue-500;
+  @apply rounded-md bg-gradient-to-t from-primary-600 to-primary-400 dark:from-primary-500 dark:to-primary-300;
 }
 
 @layer utilities {
