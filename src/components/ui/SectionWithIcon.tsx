@@ -1,11 +1,13 @@
 'use client';
 
+import type { ReactElement } from 'react';
+
 import { motion } from 'framer-motion';
 import { Card, CardContent } from './Card';
 import { cn } from '@/lib';
 
 interface section {
-  icon: JSX.Element;
+  icon: ReactElement;
   title: string;
   description: string;
 }

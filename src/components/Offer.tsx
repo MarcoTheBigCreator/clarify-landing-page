@@ -1,5 +1,7 @@
 'use client';
 
+import type { ReactElement } from 'react';
+
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { SectionWithIcon } from './ui/SectionWithIcon';
@@ -15,7 +17,7 @@ export const Offer = () => {
   const title = t('offersTitle');
   const offers = t.raw('offers') as SectionWithIcon[];
 
-  const iconMap: Record<IconOfferKey, JSX.Element> = {
+  const iconMap: Record<IconOfferKey, ReactElement> = {
     RocketIcon: <RocketIcon className="h-10 w-10 mb-4" />,
     SpeakerModerateIcon: <SpeakerModerateIcon className="h-10 w-10 mb-4" />,
     MobileIcon: <MobileIcon className="h-10 w-10 mb-4" />,

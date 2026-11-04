@@ -1,19 +1,27 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useSyncExternalStore } from 'react';
 import { useTheme } from 'next-themes';
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 
+const subscribe = () => () => {};
+const getClientSnapshot = () => true;
+const getServerSnapshot = () => false;
+
 export const ThemeSwitch = () => {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    subscribe,
+    getClientSnapshot,
+    getServerSnapshot
+  );
   const { setTheme, resolvedTheme } = useTheme();
   const [iconAnimation, setIconAnimation] = useState('icon-enter');
 
   useEffect(() => {
-    setMounted(true);
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setIconAnimation('icon-enter-active');
     }, 100);
+    return () => clearTimeout(timeout);
   }, []);
 
   const handleClick = () => {

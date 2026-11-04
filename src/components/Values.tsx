@@ -1,5 +1,7 @@
 'use client';
 
+import type { ReactElement } from 'react';
+
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { titleFont } from '@/config';
@@ -16,7 +18,7 @@ export const Values = () => {
   const title = t('valuesTitle');
   const values = t.raw('values') as SectionWithIcon[];
 
-  const iconMap: Record<IconValueKey, JSX.Element> = {
+  const iconMap: Record<IconValueKey, ReactElement> = {
     AccessibilityIcon: <AccessibilityIcon className="h-10 w-10 mb-4" />,
     HeartIcon: <HeartIcon className="h-10 w-10 mb-4" />,
     CheckCircledIcon: <CheckCircledIcon className="h-10 w-10 mb-4" />,

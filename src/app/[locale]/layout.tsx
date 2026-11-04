@@ -1,16 +1,24 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { NextIntlClientProvider } from 'next-intl';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 import '../globals.css';
 import { Footer, Navbar } from '@/components';
 import { poppins } from '@/config';
 import { Providers } from '@/providers';
 
-export async function generateMetadata(params: {
-  locale: string;
-}): Promise<Metadata> {
-  const { locale } = params;
+interface LocaleLayoutProps {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({
+  params,
+}: LocaleLayoutProps): Promise<Metadata> {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   const t = await getTranslations({ locale });
 
@@ -63,17 +71,16 @@ export async function generateMetadata(params: {
 
 export default async function RootLayout({
   children,
-  params: { locale },
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+  params,
+}: Readonly<LocaleLayoutProps>) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
   const messages = await getMessages();
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={poppins.className}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="min-h-screen bg-gradient-to-b from-white to-gray-200 dark:from-zinc-900 dark:to-zinc-800 overflow-hiddenn ease-in-out duration-200 transition-all">
             <Providers>
               <Navbar />
