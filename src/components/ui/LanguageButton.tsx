@@ -1,43 +1,22 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useLocale } from 'next-intl';
 
 interface LanguageButtonProps {
   icon?: React.ReactNode;
 }
 
 export const LanguageButton = ({ icon }: LanguageButtonProps) => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  const [currentHash, setCurrentHash] = useState<string>('');
-
-  useEffect(() => {
-    setCurrentHash(window.location.hash);
-
-    const handleHashChange = () => setCurrentHash(window.location.hash);
-    window.addEventListener('hashchange', handleHashChange);
-
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange);
-    };
-  }, []);
-
-  const isEnglish = pathname.startsWith('/en');
-
+  const isEnglish = useLocale() === 'en';
   const text = isEnglish ? 'ES' : 'EN';
-  const newPath = isEnglish
-    ? pathname.replace(/^\/en/, '/es')
-    : pathname.replace(/^\/es/, '/en');
-
-  const href = `${newPath}${
-    searchParams ? '?' + searchParams.toString() : ''
-  }${currentHash}`;
 
   const onHandleLocale = () => {
-    router.replace(href);
+    const url = new URL(window.location.href);
+    url.pathname = url.pathname.replace(
+      /^\/(en|es)(?=\/|$)/,
+      isEnglish ? '/es' : '/en'
+    );
+    window.location.assign(url.pathname + url.search + url.hash);
   };
 
   return (
